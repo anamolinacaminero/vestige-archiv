@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Queeres Archiv Hamburg</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- INTRO -->
+
+<section id="intro">
+
+    <div class="intro-message">
+
+        <div class="intro-line">
+            
+          QUEERE GESCHICHTE IST TEIL DIESER STADT
+        </div>
+
+        <div class="intro-subline">
+           Wer erinnert,<br> verändert,<br> was sichtbar bleibt.  <br>
+           Diese Geschichte ist Teil davon.
+    
+        </div>
+
+        <div id="archive-credit">
+    © Ana Molina Caminero <br>
+    <br>
+
+</div>
+
+    </div>
+<div id="archive-info">
+
+        <div class="archive-title">
+            
+          vestige
+        </div>
+
+    </div>
+</section>
+
+<!-- REGISTERBLATT -->
+ 
+
+<section id="archive">
+
+  <div id="mirror-bg"></div>
+
+<svg id="paper-mask"  width="100%"
+    height="100%"
+    preserveAspectRatio="none">
+  <defs>
+    <mask id="holesMask">
+      <rect width="100%" height="100%" fill="white"/>
+      <g id="holeGroup"></g>
+    </mask>
+  </defs>
+
+  <!-- graue Fläche -->
+  <g mask="url(#holesMask)">
+    <rect
+      width="100%"
+      height="100%"
+      fill="#9c9a9a"
+    />
+
+     <!-- Punktmuster -->
+    <image
+        href="img/Punktanimation2.png"
+         
+    object-fit="cover"
+        width="100%"
+    height="100%"
+    preserveAspectRatio="xMidYMid slice"
+    opacity="0.3"
+    />
+
+    <image
+      href="img/textured-paper.png"
+      width="100%"
+      height="100%"
+      preserveAspectRatio="xMidYMid slice"
+      opacity="0.4"
+    />
+  </g>
+</svg>
+
+    <div id="archive-info">
+
+        <div class="archive-title">
+            
+          vestige
+        </div>
+
+        <div class="archive-action">
+            
+         archiv <br>
+         queerer <br>
+         geschichten <br> 
+         aus hamburg<br>
+     
+        </div>
+
+    </div>
+
+  
+    <div id="holes"></div>
+
+    <div id="fragments"></div>
+
+    <div id="archive-credit">
+    © Ana Molina Caminero <br>
+     HAW Hamburg / 2026
+</div>
+
+</section>
+
+<!-- OVERLAY -->
+
+<section id="overlay">
+      <button id="closeTop" aria-label="Archiv öffnen"></button>
+      
+    <div id="document">
+
+
+        <div class="document-inner">
+
+            <div id="large-title"></div>
+
+            <div id="year"></div>    
+      
+              <div id="location"></div>
+
+        <div id="story-image">
+
+                <img id="detailImage" src="" alt=""> </div>
+
+            <article id="story-text"></article>
+
+            <button id="closeBtn">
+
+                ← WEITERE GESCHICHTEN ÖFFNEN
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
