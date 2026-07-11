@@ -495,25 +495,6 @@ document
 .getElementById("closeBtn")
 .addEventListener("click",()=>{
 
-
-  function animateFragments(){
-
-    document
-    .querySelectorAll(".fragment")
-    .forEach((fragment,index)=>{
-
-        fragment.style.opacity = "0";
-
-        setTimeout(()=>{
-
-            fragment.style.opacity = "1";
-
-        }, index * 250);
-
-    });
-
-}
-
 document
 .getElementById("document")
 .classList.remove("open");
@@ -537,6 +518,24 @@ requestAnimationFrame(() => {
 });
 
 });
+
+  function animateFragments(){
+
+    document
+    .querySelectorAll(".fragment")
+    .forEach((fragment,index)=>{
+
+        fragment.style.opacity = "0";
+
+        setTimeout(()=>{
+
+            fragment.style.opacity = "1";
+
+        }, index * 250);
+
+    });
+
+}
 
 function closeDocument(){
 
